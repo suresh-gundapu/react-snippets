@@ -8,7 +8,9 @@ let handleCounterupdate = ()=>{
     });
 }
     return (
+
         <div className="text-center">
+
             <div className="card shadow my-2">
                 <div className="card-header">
                     <h1 className="text-danger">
@@ -20,7 +22,9 @@ let handleCounterupdate = ()=>{
                         <div className="col-md-12 col-lg-12 col-sm-12">
                                 {count}
                         </div>
+
                     </div>
+
                     <div className="row my-2">
                         <div className="col-md-12 col-lg-12 col-sm-12">
                             <button className="btn btn-primary" onClick={()=>{
@@ -36,4 +40,5 @@ let handleCounterupdate = ()=>{
         </div>
     )
 }
+
 export default Task1;
