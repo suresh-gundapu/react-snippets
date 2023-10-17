@@ -6,7 +6,7 @@ let Task7Child = (props) => {
   return (
     <>
       <div className="text-center text-success my-4">
-        <h5>This is Child Comp - color picker</h5>
+        <h5>This is Child Comp - color pickerrr</h5>
       </div>
       <div className="my-4 ms-4">
 
