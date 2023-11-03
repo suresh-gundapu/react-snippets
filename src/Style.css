@@ -13,3 +13,24 @@
   margin: auto 31px;
   height: calc(100vh - 120px);
 }
+.content{
+  background-color: beige;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap:1rem;
+}
+.album{
+  border: 2px solid goldenrod;
+  text-align: justify;
+  font-size: 13px;
+  padding: 0.2rem;
+}
+.formData{
+  border: 2px solid goldenrod;
+margin: 20px 20px;
+padding: 20px;
+
+}
+.error{
+  color:red;
+}

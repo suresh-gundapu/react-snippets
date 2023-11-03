@@ -91,8 +91,19 @@ let Home = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="" className="link-dark rounded text-white">
+                      <NavLink
+                        to="/userAlbums"
+                        className="link-dark rounded text-white"
+                      >
                         UseEffect-2
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="/crudOperation"
+                        className="link-dark rounded text-white"
+                      >
+                        CRUD Operation
                       </NavLink>
                     </li>
                   </ul>

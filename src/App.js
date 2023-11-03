@@ -11,6 +11,10 @@ import Navbar from "./Navbar";
 import Home from "./ReactCore/Home";
 import UsersList from "./ReactCore/UsersList";
 import ToDoList from "./ReactCore/ToDoList";
+import UserAlbums from "./ReactCore/UserAlbums";
+import UserAlbumsDetails from "./ReactCore/UserAlbumsDetails";
+import CrudOperation from "./ReactCore/CrudOperation";
+import UserAdd from "./ReactCore/UserAdd";
 function App() {
   return (
     <>
@@ -26,6 +30,11 @@ function App() {
               <Route path="task7" element={<Task7 />} />
               <Route path="usersList" element={<UsersList/>}/>
               <Route path="todoList" element={<ToDoList/>}/>
+              <Route path="userAlbums" element={<UserAlbums/>} />
+              <Route path="userAlbumsDetails/:id" element={<UserAlbumsDetails/>}/>
+              <Route path="crudOperation" element={<CrudOperation/>}/>
+              <Route path="userAdd" element={<UserAdd/>}/>
+
             </Route>
           </Routes>
         </div>
