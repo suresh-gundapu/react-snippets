@@ -1,0 +1,15 @@
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header{
+  text-align: center;
+  color:blueviolet;
+}
+
+.main{
+  border:1px solid blueviolet;
+  margin: auto 31px;
+  height: calc(100vh - 120px);
+}
