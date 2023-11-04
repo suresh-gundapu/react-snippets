@@ -1,6 +1,10 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import { Services } from "../Services/Services";
 let UserAdd = () => {
+  let navigate = useNavigate();
   const initialValues = {
     name: "",
     email: "",
@@ -10,18 +14,50 @@ let UserAdd = () => {
     const errors = {};
 
     if (!values.name) {
-      errors.name = "Required";
+      errors.name = "Please Enter Name";
     }
     if (!values.email) {
-      errors.email = "Required";
+      errors.email = "Please Enter Email";
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
+    ) {
+      errors.email = "Invalid email address";
     }
     if (!values.mobile) {
-      errors.mobile = "Required";
+      errors.mobile = "Please Enter Mobile";
+    } else if (!/^(\+\d{1,3}[- ]?)?\d{10}$/.test(values.mobile)) {
+      errors.mobile = "Ivalid Mobile Number";
     }
     return errors;
   };
   const handleSubmit = (values, { setSubmiting }) => {
-    console.log(values);
+    (async () => {
+      try {
+        const formData = {
+          Name: values.name,
+          Email: values.email,
+          Mobile: values.mobile,
+        };
+        let response = await Services.addUsers(formData);
+
+        if (response.ok) {
+          Swal.fire({
+            title: "Success",
+            icon: "success",
+            text: "Data added",
+          });
+          navigate("/crudOperation");
+        } else {
+          throw new Error("Database Error");
+        }
+      } catch (error) {
+        Swal.fire({
+          title: "Error",
+          icon: "error",
+          text: error.message,
+        });
+      }
+    })();
     setSubmiting(false);
   };
   return (

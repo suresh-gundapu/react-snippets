@@ -40,7 +40,7 @@ const UsersList = () => {
       <h1 className="header"> Users List From JSON Place holder API</h1>
       <div className="main">
         {!isError?.status && (
-          <table className="table bordered">
+          <table className="table table-bordered">
             <thead>
               <tr>
                 <th>Sno</th>

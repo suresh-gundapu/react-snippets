@@ -15,6 +15,7 @@ import UserAlbums from "./ReactCore/UserAlbums";
 import UserAlbumsDetails from "./ReactCore/UserAlbumsDetails";
 import CrudOperation from "./ReactCore/CrudOperation";
 import UserAdd from "./ReactCore/UserAdd";
+import UserEdit from "./ReactCore/UserEdit";
 function App() {
   return (
     <>
@@ -34,7 +35,7 @@ function App() {
               <Route path="userAlbumsDetails/:id" element={<UserAlbumsDetails/>}/>
               <Route path="crudOperation" element={<CrudOperation/>}/>
               <Route path="userAdd" element={<UserAdd/>}/>
-
+              <Route path="userEdit/:id" element={<UserEdit/>}/>
             </Route>
           </Routes>
         </div>
