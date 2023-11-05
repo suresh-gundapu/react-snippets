@@ -16,15 +16,18 @@ import UserAlbumsDetails from "./ReactCore/UserAlbumsDetails";
 import CrudOperation from "./ReactCore/CrudOperation";
 import UserAdd from "./ReactCore/UserAdd";
 import UserEdit from "./ReactCore/UserEdit";
+import { lazy,Suspense } from "react";
+const Task_1 = lazy(() => import('./ReactCore/Task1'));
 function App() {
   return (
     <>
       <div className="container-fluid">
         <div className="row">
           <Navbar />
+          <Suspense>
           <Routes>
             <Route path="/" element={<Home />} >
-              <Route path="task1" element={<Task1 />} />
+              <Route path="task1" element={<Task_1 />} />
               <Route path="task3" element={<Task3 />} />
               <Route path="task4" element={<Task4 />} />
               <Route path="task6" element={<Task6 />} />
@@ -38,6 +41,7 @@ function App() {
               <Route path="userEdit/:id" element={<UserEdit/>}/>
             </Route>
           </Routes>
+          </Suspense>
         </div>
       </div>
     </>

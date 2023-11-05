@@ -106,6 +106,49 @@ let Home = () => {
                         CRUD Operation
                       </NavLink>
                     </li>
+                    <li>
+                      <NavLink
+                        to=""
+                        className="link-dark rounded text-white"
+                      >
+                        useContext
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to=""
+                        className="link-dark rounded text-white"
+                      >
+                        React.memo                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to=""
+                        className="link-dark rounded text-white"
+                      >
+                        useCallback                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to=""
+                        className="link-dark rounded text-white"
+                      >
+                        useMemo                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to=""
+                        className="link-dark rounded text-white"
+                      >
+                        useReducer                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to=""
+                        className="link-dark rounded text-white"
+                      >
+                        useRef                      </NavLink>
+                    </li>
                   </ul>
                 </div>
               </li>

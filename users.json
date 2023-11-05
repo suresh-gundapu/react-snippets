@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "Name": "suresh1",
+      "Email": "suresh@gmail.com",
+      "Mobile": 9603212151,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "Name": "naresh",
+      "Email": "naresh@gmail.com",
+      "Mobile": 9603212152
+    },
+    {
+      "Name": "ANIE",
+      "Email": "snie@yopmail.com",
+      "Mobile": "9603212151",
+      "id": 3
+    }
+  ]
+}
