@@ -25,7 +25,7 @@ let Home = () => {
                   data-bs-target="#home-collapse"
                   aria-expanded="true"
                 >
-                  ReactCore
+                  React
                 </button>
                 <div className="collapse show" id="home-collapse">
                   <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -107,47 +107,34 @@ let Home = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink
-                        to=""
-                        className="link-dark rounded text-white"
-                      >
+                      <NavLink to="" className="link-dark rounded text-white">
                         useContext
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink
-                        to=""
-                        className="link-dark rounded text-white"
-                      >
-                        React.memo                      </NavLink>
+                      <NavLink to="" className="link-dark rounded text-white">
+                        React.memo{" "}
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink
-                        to=""
-                        className="link-dark rounded text-white"
-                      >
-                        useCallback                      </NavLink>
+                      <NavLink to="" className="link-dark rounded text-white">
+                        useCallback{" "}
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink
-                        to=""
-                        className="link-dark rounded text-white"
-                      >
-                        useMemo                      </NavLink>
+                      <NavLink to="" className="link-dark rounded text-white">
+                        useMemo{" "}
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink
-                        to=""
-                        className="link-dark rounded text-white"
-                      >
-                        useReducer                      </NavLink>
+                      <NavLink to="" className="link-dark rounded text-white">
+                        useReducer{" "}
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink
-                        to=""
-                        className="link-dark rounded text-white"
-                      >
-                        useRef                      </NavLink>
+                      <NavLink to="" className="link-dark rounded text-white">
+                        useRef{" "}
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
@@ -164,24 +151,36 @@ let Home = () => {
                 <div className="collapse" id="dashboard-collapse">
                   <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li>
-                      <a href="#" className="link-dark rounded">
-                        Todo
-                      </a>
+                      <NavLink
+                        to="/todoListRedux"
+                        className="link-dark rounded text-white"
+                      >
+                        TODO App{" "}
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#" className="link-dark rounded">
-                        CRUD
-                      </a>
+                      <NavLink
+                        to="/crudOperation"
+                        className="link-dark rounded text-white"
+                      >
+                        CRUD Operation
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#" className="link-dark rounded">
-                        Task1
-                      </a>
+                      <NavLink
+                        to="/crudOperation"
+                        className="link-dark rounded text-white"
+                      >
+                        CRUD Operation
+                      </NavLink>
                     </li>
                     <li>
-                      <a href="#" className="link-dark rounded">
-                        Task2
-                      </a>
+                      <NavLink
+                        to="/crudOperation"
+                        className="link-dark rounded text-white"
+                      >
+                        CRUD Operation
+                      </NavLink>
                     </li>
                   </ul>
                 </div>
