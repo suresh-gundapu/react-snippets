@@ -1,12 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 let Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-secondary">
         <div className="container-fluid">
-          <a className="navbar-brand text-white" >React Snippets</a>
+          <Link to="/" className="navbar-brand text-white" >React Snippets</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

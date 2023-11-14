@@ -128,12 +128,22 @@ let Home = () => {
                     </li>
                     <li>
                       <NavLink to="" className="link-dark rounded text-white">
-                        useReducer{" "}
+                        useMemo{" - Ex-2 "}
                       </NavLink>
                     </li>
                     <li>
                       <NavLink to="" className="link-dark rounded text-white">
+                        useReducer{" "}
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/useRef1" className="link-dark rounded text-white">
                         useRef{" "}
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/useRef2" className="link-dark rounded text-white">
+                        useRef2{" "}
                       </NavLink>
                     </li>
                   </ul>
@@ -160,10 +170,10 @@ let Home = () => {
                     </li>
                     <li>
                       <NavLink
-                        to="/crudOperation"
+                        to="/accountAdd"
                         className="link-dark rounded text-white"
                       >
-                        CRUD Operation
+                        Bank Account App{" "}
                       </NavLink>
                     </li>
                     <li>

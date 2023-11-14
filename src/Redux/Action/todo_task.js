@@ -1,10 +1,7 @@
 import * as actionTypes from '../Constant/action-types';
 
-
 export const addTodo = (addTodo)=>{
-
   return {
-
     type: actionTypes.ADD_TODO,
     payload:addTodo
   }

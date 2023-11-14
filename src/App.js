@@ -15,7 +15,10 @@ import CrudOperation from "./ReactCore/CrudOperation";
 import UserAdd from "./ReactCore/UserAdd";
 import UserEdit from "./ReactCore/UserEdit";
 import { lazy, Suspense } from "react";
-const Task_1 = lazy(() => import("./ReactCore/Task1"));
+import AccountFinal from "./Redux/Component/AccountFinal";
+import UseRef1 from "./ReactCore/UseRef1";
+import UseRef2 from "./ReactCore/UseRef2";
+const Task1 = lazy(() => import("./ReactCore/Task1"));
 const TodoListing = lazy(() => import("./Redux/Component/TodoListing"));
 
 function App() {
@@ -27,7 +30,7 @@ function App() {
           <Suspense>
             <Routes>
               <Route path="/" element={<Home />}>
-                <Route path="task1" element={<Task_1 />} />
+                <Route path="task1" element={<Task1 />} />
                 <Route path="task3" element={<Task3 />} />
                 <Route path="task4" element={<Task4 />} />
                 <Route path="task6" element={<Task6 />} />
@@ -43,6 +46,10 @@ function App() {
                 <Route path="userAdd" element={<UserAdd />} />
                 <Route path="userEdit/:id" element={<UserEdit />} />
                 <Route path="todoListRedux" element={<TodoListing />} />
+                <Route path="accountAdd" element= {<AccountFinal/>} />
+                <Route path="useRef1" element= {<UseRef1  />} />
+                <Route path="useRef2" element= {<UseRef2 />} />
+
               </Route>
             </Routes>
           </Suspense>
