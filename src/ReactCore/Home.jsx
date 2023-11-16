@@ -122,7 +122,10 @@ let Home = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="" className="link-dark rounded text-white">
+                      <NavLink
+                        to="/useMemo1"
+                        className="link-dark rounded text-white"
+                      >
                         useMemo{" "}
                       </NavLink>
                     </li>
@@ -137,12 +140,18 @@ let Home = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/useRef1" className="link-dark rounded text-white">
+                      <NavLink
+                        to="/useRef1"
+                        className="link-dark rounded text-white"
+                      >
                         useRef{" "}
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/useRef2" className="link-dark rounded text-white">
+                      <NavLink
+                        to="/useRef2"
+                        className="link-dark rounded text-white"
+                      >
                         useRef2{" "}
                       </NavLink>
                     </li>

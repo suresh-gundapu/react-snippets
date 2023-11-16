@@ -18,6 +18,7 @@ import { lazy, Suspense } from "react";
 import AccountFinal from "./Redux/Component/AccountFinal";
 import UseRef1 from "./ReactCore/UseRef1";
 import UseRef2 from "./ReactCore/UseRef2";
+import UseMemo from "./ReactCore/UseMemo";
 const Task1 = lazy(() => import("./ReactCore/Task1"));
 const TodoListing = lazy(() => import("./Redux/Component/TodoListing"));
 
@@ -46,10 +47,10 @@ function App() {
                 <Route path="userAdd" element={<UserAdd />} />
                 <Route path="userEdit/:id" element={<UserEdit />} />
                 <Route path="todoListRedux" element={<TodoListing />} />
-                <Route path="accountAdd" element= {<AccountFinal/>} />
-                <Route path="useRef1" element= {<UseRef1  />} />
-                <Route path="useRef2" element= {<UseRef2 />} />
-
+                <Route path="accountAdd" element={<AccountFinal />} />
+                <Route path="useRef1" element={<UseRef1 />} />
+                <Route path="useRef2" element={<UseRef2 />} />
+                <Route path="useMemo1" element={<UseMemo />} />
               </Route>
             </Routes>
           </Suspense>
