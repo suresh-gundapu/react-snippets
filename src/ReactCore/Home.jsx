@@ -204,7 +204,28 @@ let Home = () => {
                   </ul>
                 </div>
               </li>
-
+              <li className="mb-1">
+                <button
+                  className="btn btn-toggle align-items-center rounded collapsed text-white"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#dashboard-collapse3"
+                  aria-expanded="false"
+                >
+                  Practice{" "}
+                </button>
+                <div className="collapse" id="dashboard-collapse3">
+                  <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <NavLink
+                        to="/productListing"
+                        className="link-dark rounded text-white"
+                      >
+Product Listing                      </NavLink>
+                    </li>
+                  
+                  </ul>
+                </div>
+              </li>
               <li className="border-top my-3"></li>
             </ul>
           </div>

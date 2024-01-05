@@ -19,6 +19,8 @@ import AccountFinal from "./Redux/Component/AccountFinal";
 import UseRef1 from "./ReactCore/UseRef1";
 import UseRef2 from "./ReactCore/UseRef2";
 import UseMemo from "./ReactCore/UseMemo";
+import ProductListing from "./Practice/ProductListing";
+import ProductAdd from "./Practice/ProductAdd";
 const Task1 = lazy(() => import("./ReactCore/Task1"));
 const TodoListing = lazy(() => import("./Redux/Component/TodoListing"));
 
@@ -51,6 +53,9 @@ function App() {
                 <Route path="useRef1" element={<UseRef1 />} />
                 <Route path="useRef2" element={<UseRef2 />} />
                 <Route path="useMemo1" element={<UseMemo />} />
+                <Route path="productListing" element={<ProductListing />} />
+                <Route path="productAdd" element={<ProductAdd />} />
+
               </Route>
             </Routes>
           </Suspense>

@@ -18,5 +18,25 @@
       "Mobile": "9603212151",
       "id": 3
     }
+  ],
+  "products": [
+    {
+      "name": "asda",
+      "cat": "dsad",
+      "price": "4564",
+      "id": 1
+    },
+    {
+      "name": "asda",
+      "cat": "sa",
+      "price": "4564",
+      "id": 2
+    },
+    {
+      "name": "asda",
+      "cat": "sa",
+      "price": "4564",
+      "id": 3
+    }
   ]
 }
